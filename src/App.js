@@ -12,7 +12,7 @@ function App() {
   const routes = createHashRouter([
     {path:"/",element:<Layout/>,children:[
       {index:true,element:<Home/>},
-      {path:"/about",element:<div><About/> <Animation/> <ChooseUs/> </div>},
+      {path:"/about",element:<><About/> <Animation/> <ChooseUs/> </>},
       {path:"/contact",element:<ContactUs/>},
     ]}
   ])

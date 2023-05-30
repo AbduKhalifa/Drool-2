@@ -1,0 +1,34 @@
+
+
+.choices::before{
+    content:  "";
+    position: absolute;
+    bottom: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(to Right,#00000000 50%,#E7D619 50%);
+    background-size: 20px;
+    animation-name: border-dance;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.choices img{
+    z-index: 10;
+    position: relative;
+}
+@media (max-width:768px) {
+    .choices::before{
+        opacity: 0;
+    }
+}
+@keyframes border-dance {
+    from{
+        background-position: 0 300px;
+    }
+    to{
+        background-position: 300px 0;
+    }
+}

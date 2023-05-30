@@ -1,0 +1,12 @@
+.ourFood{
+    background: linear-gradient(to bottom,#091F50 0% 60%,white 60% 100%);
+    color: white;
+}
+.ourFood button{
+    transition: 350ms;
+    border: solid 1px #091F50;
+}
+.ourFood button:hover{
+    color: #091F50;
+    background-color: white;
+}

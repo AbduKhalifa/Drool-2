@@ -1,0 +1,62 @@
+.header{
+    margin: auto;
+}
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 70%;
+    background-image: url("./../../assets/hero-bg2.png");
+    background-position: right top;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+@media (max-width:768px) {
+    .header::before{
+        width: 60px;
+        height: 20%;
+    }
+}
+
+
+/* searchIcon */
+.icons span{
+    width: 30px;
+    height: 4px;
+}
+
+
+
+/* bodySection */
+.body button{
+    color: white;
+    transition: 350ms;
+}
+.readMore{
+    border-color: #0B316D;
+}
+.readMore:hover{
+    color: #0B316D;
+    background-color: white;
+}
+.contactUs{
+    border-color: #E7D619;
+}
+.contactUs:hover{
+    color: #E7D619;
+    background-color: white;
+}
+
+
+
+
+.navigate{
+    background-color: rgb(10 32 80 / 76%);
+    transition: 350ms;
+    left: -150%;
+}
+.navigate.active{
+    left: 0%;
+}

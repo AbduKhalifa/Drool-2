@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import { RouterProvider, createHashRouter } from 'react-router-dom';
 import './App.css';
+import Layout from './comps/Layout/Layout';
+import Home from './comps/Home/Home';
+import About from './comps/AboutUs/About';
+import ContactUs from './comps/ContactUs/ContactUs';
+import Animation from './comps/Home/childComps/Animation/Animation';
+import ChooseUs from './comps/Home/childComps/ChooseUs/ChooseUs';
 
 function App() {
+
+  const routes = createHashRouter([
+    {path:"/",element:<Layout/>,children:[
+      {index:true,element:<Home/>},
+      {path:"/about",element:<div><About/> <Animation/> <ChooseUs/> </div>},
+      {path:"/contact",element:<ContactUs/>},
+    ]}
+  ])
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <RouterProvider router={routes}/>
   );
 }
 

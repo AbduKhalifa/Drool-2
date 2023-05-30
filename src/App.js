@@ -8,7 +8,7 @@ import Animation from './comps/Home/childComps/Animation/Animation';
 import ChooseUs from './comps/Home/childComps/ChooseUs/ChooseUs';
 
 function App() {
-
+  const x = 5 ;
   const routes = createHashRouter([
     {path:"/",element:<Layout/>,children:[
       {index:true,element:<Home/>},

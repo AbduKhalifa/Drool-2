@@ -7,6 +7,7 @@ import About from '../AboutUs/About'
 import Animation from './childComps/Animation/Animation'
 import ChooseUs from './childComps/ChooseUs/ChooseUs'
 import OurFood from './childComps/OurFood/OurFood'
+import Client from './childComps/Client/Client'
 
 export default function Home() {
     return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Animation />
         <ChooseUs />
         <OurFood />
+        <Client/>
         </>
     )
 }
